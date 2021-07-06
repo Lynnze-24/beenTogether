@@ -1,0 +1,29 @@
+.scroll {
+  position: fixed;
+  border-radius: 50%;
+  bottom: 50%;
+  right: 3rem;
+  height: 3rem;
+  width: 3rem;
+  background-image: url(../img/scroll.svg);
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-color: var(--color-secondary);
+  background-blend-mode: lighten;
+  visibility: hidden;
+  z-index: 20;
+  transition: all 0.2s ease-in-out;
+}
+
+// dynamic
+
+.active-scroll {
+  visibility: visible;
+  bottom: 3rem;
+}
+
+.inactive-scroll {
+  visibility: hidden;
+  bottom: 50%;
+}

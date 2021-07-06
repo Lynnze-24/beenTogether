@@ -1,0 +1,29 @@
+@mixin mq-s {
+  @media screen and (min-width: bp(s)) {
+    @content;
+  }
+}
+
+@mixin mq-md {
+  @media screen and (min-width: bp(md)) {
+    @content;
+  }
+}
+
+@mixin mq-lg {
+  @media screen and (min-width: bp(lg)) {
+    @content;
+  }
+}
+
+@mixin mq-xl {
+  @media screen and (min-width: bp(xl)) {
+    @content;
+  }
+}
+
+@mixin mq-bxl {
+  @media screen and (min-width: bp(bxl)) {
+    @content;
+  }
+}

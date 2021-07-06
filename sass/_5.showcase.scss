@@ -1,0 +1,208 @@
+.showcase {
+  z-index: 10;
+  padding: 6rem 2rem;
+  padding-bottom: 4rem;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  @extend %bg;
+  background-color: var(--color-primary);
+  margin: 0;
+  overflow: hidden;
+  background-position: bottom;
+ 
+  
+  & .hh{
+    position: absolute;
+    bottom: -10%;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    z-index: -3;
+    background-image: linear-gradient(rgba(255, 245, 192, 0.5), var(--color-tertiary)),url(../img/gallery/hh.png) ;
+    animation: fade-img 9s;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+  }
+  &-sign {
+    width: 80%;
+    border-radius: 1rem;
+    
+    margin: 9rem auto;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    
+    font-size: fs(s);
+    font-family: "Pacifico", cursive;
+    position: relative;
+    animation: up 3s;
+    
+    color: var(--color-secondary);
+
+    & h1 {
+      text-shadow: 0.4rem 0.3rem 0px var(--color-tertiary-m);
+      padding: 0.5em 1em;
+      box-shadow: 0 0 2rem 0.2rem var(--color-secondary);
+      &::selection{
+        background-color:var(--color-tertiary-m);
+      }
+    }
+
+    &_balloon-left,&_balloon-right {
+      position: absolute;
+      bottom: 103%;
+      left: 0;
+
+      &_content {
+        position: absolute;
+        left: 4rem;
+        top: 0;
+        height: 6rem;
+        width: 0.2rem;
+        background-color: var(--color-quinary);
+        transform: translateY(-100%);
+
+        &:nth-of-type(2) {
+          left: 2.5rem;
+
+          transform: rotateZ(30deg) translateY(-100%);
+        }
+
+        &:nth-of-type(3) {
+          left: 5.5rem;
+          transform: rotateZ(-30deg) translateY(-100%);
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 100%;
+          left: 50%;
+          background-color: rgba(160, 5, 5, 0.5);
+          height: 8rem;
+          width: 5rem;
+          border-radius: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+
+    &_balloon-right {
+      right: 0;
+      left: unset;
+      &_content {
+        left: unset;
+        right: 4rem;
+        
+
+        &:nth-of-type(2) {
+          right: 5.5rem;
+          left: unset;
+        }
+
+        &:nth-of-type(3) {
+          right: 2.5rem;
+          left: unset;
+        }
+    }
+
+    }
+}
+  &-icon {
+    width: 100%;
+
+    display: grid;
+    place-items: center;
+    place-content: center;
+    grid-auto-flow: column;
+    @include mq-lg{
+      gap: 10em;
+    }
+
+   
+    &_container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 2rem;
+      animation: fade-img 9s;
+      &-content {
+        width: 10rem;
+        height: 10rem;
+
+        border-radius: 50%;
+        border: 0.2rem dashed var(--color-tertiary-m);
+        @extend %bg;
+        background-image: url(https://res.cloudinary.com/coysbago2020/image/upload/w_400,c_scale/v1625127169/anni/babe_yzc7u6.jpg);
+        background-color: rgba(255, 179, 150, 0.2);
+        background-blend-mode: lighten;
+        margin: 1rem 0;
+      }
+
+      &:nth-of-type(1) div {
+        background-image: url(https://res.cloudinary.com/coysbago2020/image/upload/w_400/v1625127169/anni/ahl_mlfrdb.jpg);
+      }
+
+      & h3 {
+        font-size: fs(xs);
+        font-style: italic;
+        font-weight: fw(thin);
+        color: var(--color-pm);
+        text-shadow: 0.1rem 0.1rem 1px var(--color-secondary);
+        
+      }
+
+      & i {
+        color: var(--color-pm);
+        text-shadow: 0.2rem 0.2rem 0px var(--color-secondary);
+      }
+    }
+
+    &_heart {
+      animation: rotate-heart 3s infinite alternate-reverse linear;
+
+      & i {
+        font-size: fs(lg);
+        color: var(--color-quinary);
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+// animation
+@keyframes up {
+  from {
+    transform: translateY(700%);
+    // opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    // opacity: 1;
+  }
+}
+
+@keyframes rotate-heart {
+  from {
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    opacity: 0.4;
+  }
+  to {
+    transform-style: preserve-3d;
+    transform: rotateY(360deg);
+    opacity: 0.9;
+  }
+}
+
+@keyframes fade-img {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,126 @@
+.memo {
+  @extend %sec-padding;
+  color: var(--color-secondary);
+  font-size: fs(xs);
+
+  &-heading {
+    margin: auto;
+    width: 50%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: fs(md);
+    font-weight: fw(light);
+    text-align: center;
+    margin-bottom: 5rem;
+    border-left: 0.2rem dotted red;
+    border-right: 0.2rem dotted red;
+
+    &::selection{
+      background-color:var(--color-tertiary-m);
+    }
+  }
+  &-container {
+    display: grid;
+    
+    @include mq-lg{
+      grid-template-columns: 50% 50%;
+      padding :1%;
+    }
+    @include mq-bxl{
+      grid-template-columns: 33.33% 33.33% 33.33%;
+      padding: 0 8%;
+    }
+    &_content {
+      width: 22rem;
+      
+      height: 18rem;
+      margin: 5rem auto;
+      position: relative;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      @include mq-lg{
+        width: 25rem;
+        height: 20rem;
+      }
+      & p{
+        margin-top: 1rem;
+        font-size: 1rem;
+
+        @include mq-lg{
+          font-size: 1.5rem;
+        }
+      }
+      & i{
+        font-size: 2rem;
+        @include mq-lg{
+          font-size: 2.5rem;
+        }
+      }
+      &::after {
+        content: "\f4ad";
+        font-family: "Font Awesome 5 Free";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        transform-style: preserve-3d;
+        transition: transform 0.5s ease-in-out, opacity 1s ease-in-out;
+        bottom: 0;
+        transform-origin: bottom;
+        left: 0;
+        padding: auto 0;
+        border-top-left-radius: 70%;
+        border-top-right-radius: 70%;
+        color: var(--color-primary);
+        font-size: 2.5rem;
+        background-color: var(--color-quinary-m);
+        display: inline-block;
+        line-height: 18rem;
+        @include mq-lg{
+          font-size: 3rem;
+          line-height: 20rem;
+        }
+      }
+
+      &:nth-of-type(2):after {
+        content: "\f004";
+      }
+
+      &:nth-of-type(3):after {
+        content: "\f3cd";
+        font-weight: 900;
+      }
+
+      &:nth-of-type(4):after {
+        content: "\f79f";
+        font-weight: 900;
+        // padding-top: 26%;
+      }
+
+      &:nth-of-type(5):after {
+        content: "\f598";
+        // padding-top: 26%;
+      }
+      &:nth-of-type(6):after {
+        content: "\f70b";
+        // padding-top: 26%;
+        font-weight: 900;
+      }
+
+      &:hover:after {
+        transform: rotateX(180deg);
+        opacity: 0;
+      }
+
+      & div {
+        background-color: var(--color-secondary);
+        height: 0.2rem;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 2rem;
+      }
+    }
+  }
+}

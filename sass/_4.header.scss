@@ -1,0 +1,305 @@
+.header {
+  grid-column: container-start / container-end;
+  height: 100%;
+  width: 100%;
+  z-index: 24;
+
+  @include mq-lg {
+    overflow: hidden;
+    
+  }
+
+  &_hamburger {
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    height: 4rem;
+    width: 4rem;
+    z-index: 20;
+    display: grid;
+    place-items: center;
+
+    @include mq-lg() {
+      display: none;
+    }
+
+    &-line {
+      position: relative;
+      width: 80%;
+      height: 2px;
+      background-color: darkred;
+      transition: background-color 0.5s ease-in-out;
+
+      &::after {
+        @extend %line;
+        top: 1.1rem;
+      }
+
+      &::before {
+        @extend %line;
+        bottom: 1.1rem;
+      }
+    }
+  }
+  &_overlay {
+    background-color: var(--color-tertiary);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    display: none;
+  }
+}
+
+.main-nav {
+  z-index: 20;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 25rem;
+  background-color: var(--color-primary);
+  transform-style: preserve-3d;
+  transform: perspective(100rem) rotateY(90deg);
+  transition: transform 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  transform-origin: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  @include mq-lg() {
+    position: relative;
+    transform: unset;
+    flex-direction: row;
+    
+    width: 100vw;
+    height: max-content;
+    align-items: stretch;
+  }
+
+  &_logo {
+    width: 30%;
+    height: auto;
+    padding-top: 2.5rem;
+    position: relative;
+    @include mq-lg() {
+      width:3rem;
+      padding: 0;
+      margin-bottom: 2rem;
+      margin-left: auto;
+      margin-right: 10rem;
+    }
+
+    &::after {
+      content: "Happy Anniversary";
+      position: absolute;
+      height: max-content;
+      width: max-content;
+      bottom: -18%;
+      left: -40%;
+      color: darkred;
+      font-size: fs(xs);
+      @include mq-lg() {
+        font-size: 1rem;
+      }
+    }
+
+    & img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &_content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+
+    @include mq-lg() {
+      flex-direction: row;
+      height: auto;
+      width: 80%;
+      justify-content: center;
+    }
+
+    &--link {
+      width: 100%;
+
+      overflow: hidden;
+
+      &:nth-of-type(2n + 1) {
+        animation: upwards 1s;
+      }
+      &:nth-of-type(2n) {
+        animation: downwards 1s;
+      }
+
+      @include mq-lg() {
+        height: 100%;
+        width: max-content;
+        line-height: 7rem;
+      }
+    }
+
+    &--link a:visited,
+    &--link a:link {
+      cursor: pointer;
+      text-align: center;
+      display: block;
+      height: 100%;
+      width: 100%;
+      padding: 3vmax 0;
+      transform-style: preserve-3d;
+
+      transform-origin: left;
+      transition: transform 0.5s linear;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      position: relative;
+      @include mq-lg {
+        width: auto;
+        padding: 0 1rem;
+        margin: 0 1rem;
+        font-size: fs(xs);
+        transform-origin: top;
+      }
+    }
+
+    &--link a::after {
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      left: 100%;
+      color: var(--color-primary);
+      font-weight: fw(bold);
+      height: 100%;
+      width: 100%;
+      padding: 3vmax 0;
+      background-color: var(--color-tertiary);
+      transform-style: preserve-3d;
+      transform-origin: left;
+      transform: rotateY(90deg);  
+
+      transition: transform 0.5s linear;
+      @include mq-lg {
+        width: auto;
+        bottom: unset;
+        top: 100%;
+        left: 0;
+        padding: 0 1rem;
+        transform: rotateX(-90deg);
+        transform-origin: top;
+      }
+    }
+
+    &--link a:hover,
+    &--link a:active {
+      transform: rotateY(-90deg);
+      @include mq-lg {
+        transform: rotateX(90deg);
+      }
+    }
+  }
+}
+
+.dark-mode {
+  cursor: pointer;
+  margin-top: 2rem;
+  appearance: none;
+  display: block;
+  background-color: rgba(36, 38, 43, 0.65);
+  height: 3rem;
+  width: 6rem;
+  border-radius: 4rem;
+  position: relative;
+
+  @include mq-lg() {
+    margin: 0 2rem;
+  }
+
+  &:checked {
+    background-color: greenyellow;
+  }
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0.75rem;
+
+    border-radius: 50%;
+    height: 1.5rem;
+    width: 1.5rem;
+    transition: all 0.4s ease-in-out;
+    background-color: var(--color-quinary);
+  }
+
+  &::before {
+    left: 0.75rem;
+  }
+  &::after {
+    right: 0.75rem;
+  }
+  &:checked::after {
+    right: 2.25rem;
+  }
+  &:checked::before {
+    left: 2.25rem;
+  }
+}
+
+// dynamic classes
+
+.open .header_hamburger-line {
+  background-color: transparent;
+
+  &::after {
+    transform: translateY(-1.1rem) rotate(-45deg);
+  }
+  &::before {
+    transform: translateY(1.1rem) rotate(45deg);
+  }
+}
+
+.active {
+  & .header_overlay {
+    opacity: 0.8;
+    display: unset;
+  }
+  & .main-nav {
+    transform: rotateY(0);
+  }
+}
+
+// animations
+
+@keyframes downwards {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes upwards {
+  from {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

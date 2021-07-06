@@ -1,0 +1,43 @@
+:root {
+  font-size: 62.5%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Crimson Text", serif;
+  letter-spacing: 0.2rem;
+  line-height: 1.9;
+  color: var(--color-quinary);
+  background-color: var(--color-primary);
+}
+
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-quinary);
+
+}
+
+ul {
+  list-style: none;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  font-weight: fw(light);
+  color: var(--color-quinary);
+  font-size: fs(xs);
+}
+
+i {
+  font-size: fs(md);
+  color: var(--color-secondary);
+}
+
+button,
+a {
+  cursor: pointer;
+}

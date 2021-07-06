@@ -1,0 +1,126 @@
+.letter {
+  @extend %bg;
+  @extend %sec-padding;
+  background-image: url(https://images.unsplash.com/photo-1503455637927-730bce8583c0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80);
+
+  font-size: 1rem;
+
+  @include mq-s {
+    font-size: fs(xs);
+  }
+
+  &-content {
+    padding: 4rem 2rem;
+    position: relative;
+    overflow: hidden;
+
+    @include mq-s {
+      padding: 4rem 3rem;
+    }
+
+    & div:nth-of-type(2n) {
+      position: absolute;
+
+      height: 300%;
+      width: 0.2rem;
+      background-image: linear-gradient(
+        to bottom,
+        red,
+        green,
+        blue,
+        yellow,
+        purple,
+        red
+      );
+      opacity: 0.2;
+    }
+
+    & div:nth-of-type(2n + 1) {
+      position: absolute;
+
+      width: 300%;
+      height: 0.2rem;
+      background-image: linear-gradient(
+        to right,
+        red,
+        green,
+        blue,
+        yellow,
+        purple,
+        red
+      );
+      opacity: 0.2;
+    }
+
+    & div:nth-of-type(1) {
+      top: 0;
+      left: -50%;
+      animation: bt 2s linear infinite;
+    }
+
+    & div:nth-of-type(2) {
+      bottom: -50%;
+      left: 0;
+      animation: bl 2s linear infinite;
+    }
+
+    & div:nth-of-type(3) {
+      bottom: 0;
+      right: -50%;
+      animation: bb 2s linear infinite;
+    }
+
+    & div:nth-of-type(4) {
+      top: -50%;
+      right: 0;
+      animation: br 2s linear infinite;
+    }
+  }
+
+  & p:nth-of-type(2) {
+    margin: 2rem 0;
+  }
+
+  & p:nth-of-type(3),
+  & p:nth-of-type(4) {
+    padding-left: 60%;
+  }
+}
+
+// animation
+
+@keyframes bt {
+  from {
+    left: -150%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes bb {
+  from {
+    right: -150%;
+  }
+  to {
+    right: 0;
+  }
+}
+
+@keyframes bl {
+  from {
+    bottom: -150%;
+  }
+  to {
+    bottom: 0;
+  }
+}
+
+@keyframes br {
+  from {
+    top: -150%;
+  }
+  to {
+    top: 0;
+  }
+}

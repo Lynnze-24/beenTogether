@@ -1,0 +1,45 @@
+.quote {
+  display: grid;
+  place-items: center;
+  @extend %sec-padding;
+  font-size: calc(1.25rem + 1vw);
+  @extend %bg;
+  background-image: linear-gradient(
+      to right,
+      var(--color-primary-m),
+      var(--color-primary-m)
+    ),
+    url(https://images.unsplash.com/photo-1581022295432-7fabcc628434?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=550&q=80);
+  opacity: 1;
+  background-position: 60% 70%;
+  height: 45vh;
+  &:nth-of-type(2) {
+    background-image: url(https://images.unsplash.com/photo-1604155669054-d41e0814c359?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=550&q=80);
+    opacity: 0.9;
+  }
+  &-content {
+    border-radius: 2rem;
+
+    padding: 5rem 0;
+
+    text-shadow: 2px 3px 5px var(--color-primary);
+
+    q {
+      color: transparent;
+      font-weight: fw(bold);
+      background: linear-gradient(to bottom right, red, purple, darkred);
+
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+  }
+}
+
+
+.quote-container{
+  display: grid;
+  grid-auto-flow: row;
+  @include mq-lg{
+    grid-auto-flow: column;
+  }
+}

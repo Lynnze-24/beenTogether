@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg2" viewBox="0 0 462 401" version="1.0">
+  <defs id="defs4">
+    <filter id="filter3763" y="-.10668" width="1.1805" x="-.090244" height="1.2134">
+      <feGaussianBlur id="feGaussianBlur3765" stdDeviation="6.8951478"/>
+    </filter>
+    <filter id="filter3956">
+      <feGaussianBlur id="feGaussianBlur3958" stdDeviation="2.6998388"/>
+    </filter>
+    <linearGradient id="linearGradient5012" x1="446.98" gradientUnits="userSpaceOnUse" y1="526.22" gradientTransform="translate(-354.42 -192.43)" x2="322.75" y2="217.97">
+      <stop id="stop3747" stop-color="#6e0000" offset="0"/>
+      <stop id="stop3749" stop-color="#b60000" offset=".44731"/>
+      <stop id="stop3751" stop-color="#ad0000" offset=".84263"/>
+      <stop id="stop3753" stop-color="#e90000" offset="1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient5014" x1="194.08" gradientUnits="userSpaceOnUse" y1="327.48" gradientTransform="matrix(.49866 .50081 .56341 -.44229 -436.91 110.93)" x2="332.85" y2="339.94">
+      <stop id="stop3499" stop-color="#f97373" offset="0"/>
+      <stop id="stop3501" stop-color="#fff" stop-opacity="0" offset="1"/>
+    </linearGradient>
+  </defs>
+  <g id="layer1" transform="translate(-152.32 -78.354)">
+    <g id="g5002" transform="matrix(1.0379 0 0 1.0379 316.92 20.063)">
+      <path id="path3755" d="m198 187.69c-23.2 85.33-123.52 115.15-179.81 188.37-55-53.67-143.16-95.6-175.91-162.9 21.52 81.92 119.34 127.58 178.06 187.78 58.765-80.31 167.21-109.17 177.66-213.25z" fill="#500"/>
+      <path id="path3605" fill="#500" d="m-64.48 56.188c-41.79 0.871-78.14 27.094-91.31 71.492-23.43 121.83 106.05 163.92 176.71 232.88 61.344-79.8 189.08-102.78 175.45-218.46-5.22-26.32-19.92-47.747-39.64-62.816-26.43-20.218-63.238-27.168-94.692-15.086-16.827 5.94-32.152 16.259-43.605 29.938-19.903-24.533-51.365-38.638-82.913-37.948z"/>
+      <path id="path2723" fill="url(#linearGradient5012)" d="m-62.287 66.145c-28.408-0.04313-53.91 7.0716-75.119 44.426-24.258 42.727-8.156 100.24 64.027 161.53l92.654 75.764c4.0426-16.188 28.438-44.631 91.096-85.507 67.612-44.108 83.155-98.923 62.809-139.61-39.96-79.887-132.32-56.681-155.9-10.79-12.878-25.085-45.328-45.753-79.567-45.805z"/>
+      <path id="path3759" opacity=".519" d="m-50.484 94.157c-22.759-0.03455-39.287 6.641-60.18 35.591-23.035 31.918-6.534 80.304 51.294 129.41l74.228 60.697c3.239-12.97 22.783-35.76 72.981-68.51 54.171-35.34 69.651-80.95 50.321-111.84-38.843-62.061-106.01-45.422-124.9-8.66-10.316-20.09-36.313-36.651-63.744-36.693z" transform="matrix(1.0282 0 0 1.0282 3.8751 -9.499)" filter="url(#filter3763)" fill="#d01a1a"/>
+      <path id="path3495" filter="url(#filter3956)" fill="url(#linearGradient5014)" d="m-53.929 79.245c-11.231-11.279-37.715-6.7984-59.116 10.002s-25.356 44.856-18.424 50.868c29.072 25.213-15.556-40.029 77.54-60.87z"/>
+      <path id="path3802" d="m171.7 321.32c-0.28174-0.01101-0.56716-0.01524-0.84931-0.01803-11.959-0.13054-22.648 8.7828-26.764 19.619-7.4115 32.794 28.842 47.843 48.424 68.205 18.269-22.265 51.81-28.502 52.167-60.885-0.91518-7.2153-5.2676-13.835-10.771-18.324-7.3735-6.0223-17.837-8.3465-26.942-5.177-4.8663 1.5458-9.3395 4.3577-12.739 8.1657-5.2981-6.972-13.791-11.244-22.525-11.585zm1.8473 5.2117c9.5913 0.39844 18.37 6.879 22.082 15.686 2.7912-5.2802 7.2973-9.6113 12.831-11.893 11.704-5.269 26.539 1.5188 31.295 13.197 3.0554 7.5274 0.51902 16.054-3.8025 22.54-10.82 15.297-29.316 22.215-41.937 35.669-9.4501-8.81-20.435-15.894-29.679-24.91-7.2679-6.608-13.494-15.281-14.279-25.324-1.6667-12.773 9.8707-25.003 22.56-24.986 0.31095 0.00006 0.62035 0.00774 0.92975 0.0206z" fill="#500"/>
+      <path id="path3827" d="m75.608 383.74c-0.187-0.0073-0.37642-0.01011-0.56369-0.01196-7.9371-0.08664-15.031 5.8291-17.763 13.021-4.919 21.765 19.142 31.753 32.138 45.267 12.125-14.777 34.386-18.917 34.623-40.409-0.60738-4.7888-3.4961-9.1822-7.1483-12.161-4.8937-3.9969-11.838-5.5395-17.881-3.4359-3.2297 1.0259-6.1986 2.8922-8.455 5.4195-3.5163-4.6272-9.1531-7.4624-14.95-7.689zm1.226 3.459c6.3657 0.26444 12.192 4.5656 14.655 10.411 1.8525-3.5044 4.8432-6.3789 8.5158-7.8935 7.7679-3.497 17.613 1.008 20.77 8.7586 2.0279 4.9959 0.34447 10.655-2.5237 14.96-7.1811 10.153-19.457 14.744-27.833 23.673-6.2719-5.8472-13.562-10.549-19.698-16.532-4.8237-4.3857-8.9561-10.142-9.4767-16.807-1.1062-8.4775 6.5511-16.594 14.973-16.583 0.20638 0.00004 0.41172 0.00514 0.61706 0.01368z" fill="#500"/>
+      <path id="path3837" d="m232.37 233.02c-0.20751-0.00811-0.41772-0.01123-0.62553-0.01328-8.808-0.09614-16.681 6.4686-19.712 14.449-5.4587 24.153 21.242 35.237 35.665 50.234 13.456-16.398 38.159-20.992 38.422-44.843-0.67404-5.3142-3.8797-10.19-7.9326-13.496-5.4307-4.4355-13.137-6.1473-19.843-3.8129-3.5841 1.1385-6.8787 3.2095-9.3827 6.0142-3.9021-5.135-10.157-8.2812-16.59-8.5327zm1.3606 3.8385c7.0641 0.29346 13.53 5.0665 16.264 11.553 2.0558-3.8889 5.3746-7.0789 9.4502-8.7596 8.6202-3.8807 19.546 1.1186 23.049 9.7196 2.2504 5.544 0.38227 11.824-2.8006 16.601-7.969 11.267-21.592 16.362-30.887 26.271-6.9601-6.4887-15.051-11.706-21.859-18.346-5.3529-4.8669-9.9388-11.255-10.516-18.651-1.2275-9.4076 7.2699-18.415 16.616-18.402 0.22902 0.00004 0.45689 0.00569 0.68477 0.01517z" fill="#500"/>
+    </g>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Red Stylised Heart with Smaller Hearts</dc:title>
+        <dc:date>2009-02-06T22:46:10</dc:date>
+        <dc:description>Red heart with three smaller heart shapes</dc:description>
+        <dc:source>http://openclipart.org/detail/21411/red-stylised-heart-with-smaller-hearts-by-pixabella-21411</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>pixabella</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+            <rdf:li>heart</rdf:li>
+            <rdf:li>image</rdf:li>
+            <rdf:li>inkscape</rdf:li>
+            <rdf:li>love</rdf:li>
+            <rdf:li>love heart</rdf:li>
+            <rdf:li>media</rdf:li>
+            <rdf:li>png</rdf:li>
+            <rdf:li>public domain</rdf:li>
+            <rdf:li>romance</rdf:li>
+            <rdf:li>romantic</rdf:li>
+            <rdf:li>svg</rdf:li>
+            <rdf:li>valentine</rdf:li>
+            <rdf:li>valentine heart</rdf:li>
+            <rdf:li>valentines day</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

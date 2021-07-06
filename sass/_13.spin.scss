@@ -1,0 +1,292 @@
+.spin{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--color-primary);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    @include mq-lg{
+        margin-top: 5rem;
+    margin-bottom: 5rem;
+    height: 110vh;
+    }
+
+    &-info{
+        margin-top: 4rem;
+        color: var(--color-tertiary);
+        text-shadow: 0.1rem 0.1rem  var(--color-quinary);
+        font-size: fs(xs);
+        &::selection{
+            background-color:var(--color-tertiary-m);
+          }
+    }
+    & h1{
+       font-style: italic;
+       
+       padding: 0.3em 2em;
+       border-radius: 10em;
+       background: linear-gradient(to right,var(--color-secondary),var(--color-secondary),#ff8585,var(--color-quinary));
+       color: transparent;
+       background-clip: text;
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+        font-weight: fw(thin);
+        letter-spacing: 0.2rem;
+        font-size: fs(md);
+        margin-bottom: 5rem;
+        position: relative;
+        overflow: hidden;
+        &::selection{
+            background-color: var(--color-tertiary-m);
+            -webkit-text-fill-color: var(--color-quinary);
+        }
+        & div{
+            position: absolute;
+        }
+        & div:nth-of-type(2n) {
+            
+            height: 0.5rem;
+            width: 100%;
+        }
+          
+        & div:nth-of-type(2n + 1) {
+            
+            height: 100%;
+            width: 0.5rem;
+        }
+        & div:nth-of-type(1){
+            background-image: linear-gradient(180deg, transparent, var(--color-tertiary));
+            right: 0;
+            bottom: 100%;
+            animation: border1 1s linear infinite;
+            animation-delay: 0.5s;
+        }
+        & div:nth-of-type(2){
+            background-image: linear-gradient(90deg, transparent, var(--color-tertiary));
+            right: 100%;
+            top: 0;
+            animation: border2 1s linear infinite;
+            animation-delay: 0s;
+        }
+        & div:nth-of-type(3){
+            background-image: linear-gradient(360deg, transparent, var(--color-tertiary));
+            left: 0;
+            top: 100%;
+            animation: border3 1s linear infinite;
+            animation-delay: 0.5s;
+        }
+        & div:nth-of-type(4){
+            background-image: linear-gradient(270deg, transparent, var(--color-tertiary));
+            left: 100%;
+            bottom: 0;
+            animation: border4 1s linear infinite;
+            animation-delay: 0s;
+        }
+    }
+    &-con{
+        height: 25rem;
+        width: 25rem;
+        background: radial-gradient(red,red,red,var(--color-tertiary),var(--color-tertiary));
+        border-radius: 50%;
+        
+        position: relative;
+        @include mq-s{
+            height: 30rem;
+            width: 30rem;
+        }
+        @include mq-lg{
+            height: 46rem;
+            width: 46rem;
+        }
+        
+        & button{
+            appearance: none;
+            outline: none;
+            border: none;
+            position: absolute;
+            text-transform: uppercase;
+            border-radius: 50%;
+            font-weight: bolder;
+            
+            height: 4rem;
+            width: 4rem;
+            line-height: 4rem;
+            font-size: fs(xxs);
+            text-align: center;
+            top: 50%;left: 50%;
+            transform: translate(-50%,-50%);
+            color: var(--color-secondary);
+            text-shadow: 0.2rem 0.2rem 0 var(--color-primary);
+            background: radial-gradient(var(--color-primary),var(--color-primary),var(--color-primary),var(--color-secondary),var(--color-secondary),var(--color-secondary));
+            z-index: 20;
+            @include mq-s{
+                letter-spacing: 0.2rem;
+                height: 6rem;
+                width: 6rem;
+            line-height: 6rem;
+                
+            }
+            @include mq-lg{
+                height: 8rem;
+            width: 8rem;
+            line-height: 8rem;
+                
+            }
+
+            &::after{
+                content: '';
+                position: absolute;
+                width: 0; 
+                height: 0; 
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                bottom: 94%;
+                left: 50%;
+                transform: translateX(-50%);
+                border-bottom: 15px solid var(--color-secondary);
+                z-index: -1;
+
+                @include mq-s{
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid transparent;
+                    border-bottom: 25px solid var(--color-secondary);
+                }
+                
+            }
+
+        }
+        &_content{
+            position: absolute;
+            height: 50%;width: 45%;
+            transform-origin: bottom;
+            clip-path: polygon(100% 0,50% 100%,0 0);
+            background-color: var(--color-tertiary);
+            transform: translateX(-50%);
+            top: 0;
+            left: 27.6%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;align-items: center;
+            &:nth-of-type(1){
+               left: 50%;
+                
+            }
+            &:nth-of-type(2){
+                transform: rotate(45deg);
+                background-color: var(--color-primary) ;
+            }
+            &:nth-of-type(3){
+                transform: rotate(90deg);
+                background-color: var(--color-tertiary) ;
+            }
+            &:nth-of-type(4){
+                transform: rotate(135deg);
+                background-color: var(--color-primary) ;
+            }
+            &:nth-of-type(5){
+                transform: rotate(180deg);
+                background-color: var(--color-tertiary) ;
+            }
+            &:nth-of-type(6){
+                transform: rotate(225deg);
+                background-color: var(--color-primary) ;
+            }
+            &:nth-of-type(7){
+                transform: rotate(270deg);
+                background-color: var(--color-tertiary) ;
+            }
+            &:nth-of-type(8){
+                transform: rotate(315deg);
+                background-color: var(--color-primary) ;
+                
+            }
+           & p{
+               
+               height: 10rem;
+               font-size: fs(xs);
+               line-height: 5rem;
+               
+           }
+           
+           & p:nth-of-type(2){
+               
+            margin-bottom: 3rem;
+        }
+        }
+        & .won{
+            animation: winning 0.2s infinite;
+        }
+    }
+}
+
+.spinning{
+    height: 23rem;
+    width: 23rem;
+    position: relative;
+    transition: transform 5s;
+    left: 1rem;
+    top: 1rem;
+    overflow: hidden;
+    border-radius: 50%;
+    z-index: 10;
+    @include mq-s{
+        height: 28rem;
+    width: 28rem;
+    left: 1rem;
+    top: 1rem;
+    }
+    @include mq-lg{
+        height: 40rem;
+        width: 40rem;
+        left: 3rem;
+    top: 3rem;
+    }
+    
+}
+
+@keyframes winning {
+    
+    50%{
+        background-color:rgb(212, 207, 207);
+    }
+    
+}
+
+@keyframes border1 {
+    from {
+      bottom: 100%;
+    }
+    to {
+      bottom: -100%;
+    }
+  }
+  
+  @keyframes border2 {
+    from {
+      right: 100%;
+    }
+    to {
+      right: -100%;
+    }
+  }
+  
+  @keyframes border3 {
+    from {
+      top: 100%;
+    }
+    to {
+      top: -100%;
+    }
+  }
+  
+  @keyframes border4 {
+    from {
+      left: 100%;
+    }
+    to {
+      left: -100%;
+    }
+  }

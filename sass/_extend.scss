@@ -1,0 +1,28 @@
+%bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+%sec-padding {
+  padding: 6vh 4vw;
+}
+
+%child {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+%line {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: darkred;
+  left: 0;
+  transition: transform 0.5s ease-in-out;
+}

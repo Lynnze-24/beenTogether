@@ -1,0 +1,65 @@
+.time {
+  height: 100vh;
+  @extend%bg;
+  @extend %sec-padding;
+  background-image: url(https://images.unsplash.com/photo-1614699873967-2811e1c2d5bb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80);
+  background-position: 50% 70%;
+  font-size: fs(xs);
+  @include mq-s{
+    font-size: fs(s);
+  }
+  @include mq-lg{
+    background-image: url(https://images.unsplash.com/photo-1614699873967-2811e1c2d5bb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80);
+  }
+
+  &-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height:5em;
+    @include mq-s{
+      line-height:3em;
+    }
+  }
+
+  & p {
+    color: var(--color-primary);
+    text-shadow: 8px 2px 6px var(--color-quinary);
+  }
+
+  & p:nth-of-type(1) {
+    margin-top: 3rem;
+    margin-bottom: 0.5em;
+    font-size: fs(xl);
+  }
+
+  & p:nth-of-type(3) {
+    margin-right: 6rem;
+  }
+
+  & p:nth-of-type(4) {
+    margin-left: 6rem;
+  }
+
+  & p:last-of-type {
+    margin-top: 8rem;
+   
+    font-style: italic;
+    font-size: fs(xs);
+    
+    @include mq-xl{
+      margin-top: 2rem;
+    }
+
+  }
+
+  & span {
+    color: var(--color-primary);
+    padding: 0.8rem;
+    background-color: var(--color-tertiary-m);
+    margin-right: 3px;
+  }
+}
