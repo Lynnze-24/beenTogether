@@ -549,14 +549,14 @@ a {
   height: 10rem;
   border-radius: 50%;
   border: 0.2rem dashed var(--color-tertiary-m);
-  background-image: url(https://res.cloudinary.com/coysbago2020/image/upload/w_400,c_scale/v1625127169/anni/babe_yzc7u6.jpg);
+  background-image: url(../img/gallery/m.png);
   background-color: rgba(255, 179, 150, 0.2);
   background-blend-mode: lighten;
   margin: 1rem 0;
 }
 
 .showcase-icon_container:nth-of-type(1) div {
-  background-image: url(https://res.cloudinary.com/coysbago2020/image/upload/w_400/v1625127169/anni/ahl_mlfrdb.jpg);
+  background-image: url(../img/gallery/c.jpg);
 }
 
 .showcase-icon_container h3 {
@@ -1053,10 +1053,6 @@ a {
   height: 25rem;
   width: 20rem;
   transform-style: preserve-3d;
-  -webkit-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  -o-transform: translateZ(0);
   transform: translateZ(0);
   animation: rotate3D 70s linear infinite;
 }
@@ -1495,3 +1491,4 @@ a {
   visibility: hidden;
   bottom: 50%;
 }
+/*# sourceMappingURL=main.css.map */

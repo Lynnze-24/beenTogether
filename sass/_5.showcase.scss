@@ -136,14 +136,14 @@
         border-radius: 50%;
         border: 0.2rem dashed var(--color-tertiary-m);
         @extend %bg;
-        background-image: url(https://res.cloudinary.com/coysbago2020/image/upload/w_400,c_scale/v1625127169/anni/babe_yzc7u6.jpg);
+        background-image: url(../img/gallery/m.png);
         background-color: rgba(255, 179, 150, 0.2);
         background-blend-mode: lighten;
         margin: 1rem 0;
       }
 
       &:nth-of-type(1) div {
-        background-image: url(https://res.cloudinary.com/coysbago2020/image/upload/w_400/v1625127169/anni/ahl_mlfrdb.jpg);
+        background-image: url(../img/gallery/c.jpg);
       }
 
       & h3 {
