@@ -121,7 +121,7 @@
             color: var(--color-secondary);
             text-shadow: 0.2rem 0.2rem 0 var(--color-primary);
             background: radial-gradient(var(--color-primary),var(--color-primary),var(--color-primary),var(--color-secondary),var(--color-secondary),var(--color-secondary));
-            z-index: 20;
+            z-index: 15;
             @include mq-s{
                 letter-spacing: 0.2rem;
                 height: 6rem;
